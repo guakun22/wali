@@ -1,4 +1,4 @@
-package com.github.guakun22.robot;
+package com.guakun22.robot.wali;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

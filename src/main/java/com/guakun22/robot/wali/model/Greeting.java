@@ -1,4 +1,4 @@
-package com.github.guakun22.robot.model;
+package com.guakun22.robot.wali.model;
 
 public class Greeting {
     private final Long id;
