@@ -1,4 +1,4 @@
-package com.guakun22.robot.wali.controllers;
+package com.guakun22.robot.wali.controller;
 
 import com.guakun22.robot.wali.model.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;
