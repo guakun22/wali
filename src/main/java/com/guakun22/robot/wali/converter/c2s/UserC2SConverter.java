@@ -3,7 +3,11 @@ package com.guakun22.robot.wali.converter.c2s;
 import com.google.common.base.Converter;
 import com.guakun22.robot.wali.model.common.UserBO;
 import com.guakun22.robot.wali.model.service.UserDTO;
+import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
+@Component
+@NoArgsConstructor
 public class UserC2SConverter extends Converter<UserBO, UserDTO> {
     @Override
     protected UserDTO doForward(UserBO userBO) {
