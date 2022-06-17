@@ -33,3 +33,6 @@ hs_err_pid*
 # docker-mysaql-persist
 database-*/
 
+# ignore config
+src/main/resources/application.yml
+
