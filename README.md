@@ -23,7 +23,7 @@ docker run -p 3306:3306 --name wali-db --platform linux/x86_64 \
 docker run -p 3306:3306 --name wali-db  \
 -v `pwd`/database-volume/log:/var/log/mysql \
 -v `pwd`/database-volume/data:/var/lib/mysql \
--e MYSQL_ROOT_PASSWORD=guakun22Pwd \
+-e MYSQL_ROOT_PASSWORD=ObviouslyFakePwd \
 -d mariadb:latest
 ```
 
