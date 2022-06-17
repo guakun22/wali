@@ -9,5 +9,5 @@ public interface UserManager {
      * @param userId the specific user id.
      * @return bo
      */
-    UserBO getUserById(Long userId);
+    UserBO getById(Long userId);
 }
