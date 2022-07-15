@@ -21,13 +21,13 @@ public class UserController {
 
     @Autowired
     public UserController(final UserManager userManager,
-            final UserC2SConverter userC2SConverter) {
+                          final UserC2SConverter userC2SConverter) {
         this.userManager = userManager;
         this.userC2SConverter = userC2SConverter;
     }
 
     @GetMapping("/{id}")
-    public UserDTO getById(@PathVariable("id") Long id) {
+    public UserDTO getUserById(@PathVariable("id") Long id) {
         if (Objects.isNull(id) || id < 0L) {
             throw new InvalidParameterException(
                     String.format("Parse wrong type for id(%s).", id)
