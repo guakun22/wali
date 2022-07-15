@@ -26,9 +26,9 @@ public class UserManagerImpl implements UserManager {
     }
 
     @Override
-    public UserBO getById(Long id) {
+    public UserBO getUserById(Long id) {
         UserDO userDO = Optional
-                .ofNullable(userDAO.getById(id))
+                .ofNullable(userDAO.getUserById(id))
                 .orElseThrow(
                         () -> new ResourceNotFoundException(
                                 String.format("Could not find User(id=%s).", id)));

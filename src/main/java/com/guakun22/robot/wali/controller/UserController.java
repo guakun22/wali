@@ -33,6 +33,6 @@ public class UserController {
                     String.format("Parse wrong type for id(%s).", id)
             );
         }
-        return userC2SConverter.convert(userManager.getById(id));
+        return userC2SConverter.convert(userManager.getUserById(id));
     }
 }

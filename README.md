@@ -80,3 +80,7 @@ CREATE TABLE `robot_wali_user`
 2. 添加注解
 - @Mapper
 - @Select
+
+### 目录结构
+1. p2c (persist to common)
+2. c2s (common to service)

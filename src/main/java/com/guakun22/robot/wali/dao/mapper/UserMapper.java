@@ -14,5 +14,5 @@ public interface UserMapper {
      * @return
      */
     @Select("SELECT * FROM robot_wali_user WHERE id = #{id};")
-    UserDO getById(@Param("id") Long id);
+    UserDO getUserById(@Param("id") Long id);
 }

@@ -15,8 +15,8 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public UserDO getById(Long id) {
-        return userMapper.getById(id);
+    public UserDO getUserById(Long id) {
+        return userMapper.getUserById(id);
     }
 
     @Override

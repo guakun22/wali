@@ -8,7 +8,7 @@ public interface UserDAO {
      * @param id id
      * @return do
      */
-    UserDO getById(Long id);
+    UserDO getUserById(Long id);
 
     /**
      * create
