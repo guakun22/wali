@@ -21,6 +21,11 @@ public class UserP2CConverter extends Converter<UserDO, UserBO> {
 
     @Override
     protected UserDO doBackward(UserBO userBO) {
-        throw new UnsupportedOperationException("还不支持这种操作！");
+//        throw new UnsupportedOperationException("还不支持这种操作！");
+        return UserDO.builder()
+                .id(userBO.getId())
+                .name(userBO.getName())
+                .password(userBO.getPassword())
+                .build();
     }
 }

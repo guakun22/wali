@@ -20,6 +20,10 @@ public class UserC2SConverter extends Converter<UserBO, UserDTO> {
 
     @Override
     protected UserBO doBackward(UserDTO userDTO) {
-        throw new UnsupportedOperationException("不支持这种操作。");
+//        throw new UnsupportedOperationException("不支持这种操作。");
+        return UserBO.builder()
+                .id(userDTO.getId())
+                .name(userDTO.getName())
+                .build();
     }
 }
